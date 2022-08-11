@@ -1,0 +1,487 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+    <title>WhereToGo</title>
+    <!-- <link rel="stylesheet" href="/Users/yuto/Desktop/firstPython/mysite/templates/css/styles.css"> -->
+
+
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans&family=JetBrains+Mono:wght@800&family=Kantumruy+Pro:wght@500&family=Nunito:wght@700&family=Manrope:wght@600&family=Montserrat:wght@300&family=Open+Sans&family=PT+Sans:wght@700&family=M+PLUS+1p:wght@500&family=Playfair+Display:wght@600&family=Poppins&family=Raleway:wght@100;500&family=Sora:wght@500&family=Space+Grotesk:wght@700&family=Roboto&family=Rubik:wght@500&family=Ubuntu:wght@300&family=Work+Sans:wght@500&display=swap"
+        rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+
+
+    <header>
+        <div class="headerDiv">
+            <div class="insideHeader">
+                <div id="Logo">
+                    <h3 class="logo">WhereToGo</h3>
+                </div>
+
+                <div class="menu">
+
+
+                    <div class="textMenu">
+                        <!-- <h3>About</h3> -->
+                        <!-- <h3>contact</h3> -->
+
+                        <div class="selectionItems2">
+                            <div class="currency">
+                                <div class="visitPs">
+                                    <span class="currencyText">Euro</span>
+                                    <span class="currencyText">Pound</span>
+                                </div>
+                                <img src="{% static 'img/euro.svg' %}" alt="" id='currencyImg'>
+                                <span class="currencyText2">Pound</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <h3 id="login">Log in</h3>
+                    <h3 id="create">Create account</h3>
+
+                    <div class="tabIcon"><img src="{% static 'img/align-right.svg' %}" alt="" id="tabBtn"></div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <div class="backgroundRatio"></div>
+
+        <div class="hero">
+            <div class="shadowFrame">
+
+
+                <div class="upper">
+                    <div class="innerUpper">
+                        <div class="discribe">
+                            <h2 id="leftH2">Search easier Find cheapest</h2>
+                            <h1 id="leftH1">FInd cheaper flights</h1>
+                            <h2 id="rh2">find cheaper lcc flights of europe with WhereToGo </h2>
+                            <!-- <p class="exp">Find lcc cheapest flight of each day and save your time But it can only be one
+                                    way and one person searching </p> -->
+                        </div>
+
+                        <div class="rightUpper">
+                            <!-- <img src="{% static 'img/pexels-pierre-blaché-2901209.jpg' %}" alt="" id="upperr"> -->
+                            <img src="{% static 'img/DrawKit Vector Illustration Travel & Transportation Isometric (1).png' %}"
+                                alt="" id="upperr">
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- <h2 id="rh21">Find cheapest</h2> -->
+
+
+
+                <div class="selections">
+
+                    <div class="sunction">
+
+                        <div class="selectionItem">
+                            <div class="origin">
+                                <img src="{% static 'img/map-marker.svg' %}" alt="" id="pin">
+
+
+                            </div>
+                            <div class="originRight">
+                                <span id="spp">From</span>
+                                <span id="apt">Departure</span>
+                            </div>
+                        </div>
+
+
+                        <div class="img">
+                            <img src="{% static 'img/arrow-right2.svg' %}" alt="" id="arrowRight">
+                            <!-- <i class="zmdi zmdi-long-arrow-right zmdi-hc-1x"></i> -->
+                        </div>
+
+                        <div class="selectionItem2">
+                            <!-- <span id="sp">To</span> -->
+                            <div class="destination">
+                                <img src="{% static 'img/compass2.svg' %}" alt="" id="destinationImg">
+                                <!-- <img src="{% static 'img/chevron-down.svg' %}" alt="" id="selectAlow"> -->
+                                <!-- <i class="zmdi zmdi-chevron-down zmdi-hc-2x" id="selectAlow"></i> -->
+                            </div>
+                            <div class="destinatonRight">
+                                <span id="destination">Destination</span>
+                                <span id="sa">Select Area</span>
+                                <!-- <select name="name" id="monthSelector">
+                                    <option>Select Area</option>
+                                    <option>westernEU</option>
+                                    <option>easternEU</option>
+                                    <option>nothernEU</option>
+                                    <option>southernEU</option>
+                                </select> -->
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="sunction2">
+                        <div class="selectionItem3">
+                            <div class="datePicker">
+                                <img src="{% static 'img/calendar.svg' %}" alt="" id="calendarIcon">
+                            </div>
+                            <div class="datePickerRight">
+                                <span id="depert">Depert</span>
+                                <span id="dp">Select Month</span>
+                            </div>
+                        </div>
+
+                        <div class="selectionItem4">
+                            <div class="passenger">
+                                <img src="{% static 'img/person.svg' %}" alt="" id="calendarIcon">
+                            </div>
+                            <div class="passengerRight">
+                                <span id="pa">Passenger</span>
+                                <span id="paa">1 passenger</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+                <form class="btnDiv">
+
+                    <button type="button" class="btn" name="searchBtn">
+                        Find flights
+                    </button>
+                </form>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="pops">
+
+
+            <div class="inputPop">
+                <div class="inputPopUpper">
+                    <div class="modaHead0">
+                        <button class="modalBtn0">
+                            <img src="{% static 'img/plus-Blue.svg' %}" alt="" id="mbImg">
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="inputDiv">
+                    <form action="" method="post" id="originForm">
+                        {% csrf_token %}
+                        <input type="text" placeholder="Departure" id="Input">
+                    </form>
+
+                    <button id="clearBtn">
+                        <img src="{% static 'img/plus-White.svg' %}" alt="" id="clearImg">
+                    </button>
+                </div>
+                <div class="inputPopLine"></div>
+
+                <ul class="srUl"></ul>
+            </div>
+
+            <div class="areaPop">
+                <div class="areaPopUpper">
+                    <div class="modaHead">
+                        <button class="modalBtn">
+                            <img src="{% static 'img/plus-Blue.svg' %}" alt="" id="mbImg">
+                        </button>
+                    </div>
+                    <div class="Ath">
+                        <span id="areaTextH">Destination</span>
+                    </div>
+                </div>
+                <div class="areaPopLine"></div>
+
+                <ul class="areaUl">
+                    <li class="areaList">
+                        <!-- <div class="liContent"> -->
+                        <button class="areaBtn">
+                            <div class="btnContent">
+                                <img src="{% static 'img/earth-europe-solid.svg' %}" alt="" id='globe'>
+                                <span id="areaText">Western EU</span>
+                            </div>
+                        </button>
+                        <!-- </div> -->
+                    </li>
+                    <li class="areaList">
+                        <button class="areaBtn">
+                            <div class="btnContent">
+                                <img src="{% static 'img/earth-europe-solid.svg' %}" alt="" id='globe'>
+                                <span id="areaText">Southern EU</span>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="areaList">
+                        <button class="areaBtn">
+                            <div class="btnContent">
+                                <img src="{% static 'img/earth-europe-solid.svg' %}" alt="" id='globe'>
+                                <span id="areaText">Nothern EU</span>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="areaList">
+                        <button class="areaBtn">
+                            <div class="btnContent">
+                                <img src="{% static 'img/earth-europe-solid.svg' %}" alt="" id='globe'>
+                                <span id="areaText">Eastern EU</span>
+                            </div>
+                        </button>
+                    </li>
+
+                </ul>
+
+
+                <!-- <button type="button" class="areaPopBtn" name="searchBtn">
+                    <span>Done</span>
+                </button> -->
+
+            </div>
+
+            <div class="calendarPop">
+                <div class="calendarPopUpper">
+                    <div class="modaHead2">
+                        <button class="modalBtn2">
+                            <img src="{% static 'img/plus-Blue.svg' %}" alt="" id="mbImg">
+                        </button>
+                    </div>
+                    <div id="ch">
+                        <span id="areaTextH"> Pick month</span>
+                    </div>
+                </div>
+                <div class="calendarPopLine"></div>
+
+                <div class="calendarMonh">
+
+                    <div class="Rows">
+                        <div class="john">
+                            <button class="Md" type="button"></button>
+                        </div>
+                        <div class="john">
+                            <button class="Md" type="button"></button>
+                        </div>
+                    </div>
+
+                    <div class="Rows">
+                        <div class="john">
+                            <button class="Md" type="button"></button>
+                        </div>
+                        <div class="john">
+                            <button class="Md" type="button"></button>
+                        </div>
+                    </div>
+
+                    <div class="Rows">
+                        <div class="john">
+                            <button class="Md" type="button"></button>
+                        </div>
+                        <div class="john">
+                            <button class="Md" type="button"></button>
+                        </div>
+                    </div>
+
+                    <div class="Rows">
+                        <div class="john">
+                            <button class="Md" type="button"></button>
+                        </div>
+                        <div class="john">
+                            <button class="Md" type="button"></button>
+                        </div>
+                    </div>
+
+                 
+                </div>
+
+                <!-- <button type="button" class="areaPopBtn" name="searchBtn">
+                    <span>Done</span> -->
+                </button>
+            </div>
+
+            <div class="travellersPop">
+                <div class="travelPopUpper">
+                    <div class="modaHead3">
+                        <button class="modalBtn3">
+                            <img src="{% static 'img/plus-Blue.svg' %}" alt="" id="mbImg">
+                        </button>
+                    </div>
+                    <div class="sp">
+                        <span id="areaTextH">Passengers</span>
+                    </div>
+                </div>
+                
+                <div class="travelPopLine"></div>
+               
+                <div class="selectPassengers">
+                    <label for="" id="aLabel">Adults</label>
+                    <div class="rightPassenger">
+                        <button class="passengerBtn1">
+                            <img src="{% static 'img/dash.svg' %}" alt="" class="PassMinusImg">
+                        </button>
+                        <span id="PasNum">1</span>
+                        <button class="passengerBtn">
+                            <img src="{% static 'img/plus.svg' %}" alt="" class="PassImg1">
+                        </button>
+                    </div>
+                </div>
+
+                <button type="button" class="areaPopBtn" name="searchBtn">
+                    <span>Done</span>
+                </button>
+            </div>
+
+
+            <!-- <div class="modal">
+                <div class="modaHead">
+                    <button class="modalBtn">
+                        <img src="{% static 'img/plus-Blue.svg' %}" alt="" id="mbImg">
+                    </button>
+                </div>
+
+                <div class="modalInput">
+                        <form action="" method="post" id="originForm">
+                            {% csrf_token %}
+                            <input type="search" placeholder="WhereToGo" id="Input">
+                        </form>
+                </div>
+                
+
+            </div> -->
+        </div>
+
+
+        <div class="second">
+            <div class="innerSecond">
+                <!-- <div class="sl"> -->
+                <img src="{% static 'img/pexels-pixabay-314860.jpg' %}" alt="" id="secondImg">
+                <!-- </div> -->
+
+                <div class="sr">
+                    <h2 id="srH2">save your time</h2>
+                    <h1 id="srH1">WhereToGo is</h1>
+                    <p id="srP">You can search cheap europe airlines flights of each days on
+                        specific month. we also provide cheapest flights info on twitter each weak! cheke it out.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="thred">
+            <div class="therdHead">
+                <div>
+                    <h2 id="therdH2">Weekly cheapest flights notify</h2>
+                    <!-- <p>we provide cheapest flights infomatoin on twitter each week.</p> -->
+                </div>
+
+                <div class="visitDiv">
+                    <h3 id="visit">visit @WhereToGo</h3>
+                    <img src="{% static 'img/arrow-right2Blue.svg' %}" alt="" id="therdRightimg">
+                </div>
+            </div>
+
+            <div class="twitters">
+                <div class="twitterLog">
+                    <blockquote class="twitter-tweet" data-theme="light">
+                        <p lang="qst" dir="ltr">a</p>&mdash; dcd cc (@dcdcc96582060) <a
+                            href="https://twitter.com/dcdcc96582060/status/1549970539753590784?ref_src=twsrc%5Etfw">July
+                            21, 2022</a>
+                    </blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <div class="twitterLog">
+                    <blockquote class="twitter-tweet" data-theme="light">
+                        <p lang="qst" dir="ltr">a</p>&mdash; dcd cc (@dcdcc96582060) <a
+                            href="https://twitter.com/dcdcc96582060/status/1549970539753590784?ref_src=twsrc%5Etfw">July
+                            21, 2022</a>
+                    </blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <!-- <div class="twitterLog">
+                    <blockquote class="twitter-tweet" data-theme="light"><p lang="qst" dir="ltr">a</p>&mdash; dcd cc (@dcdcc96582060) <a href="https://twitter.com/dcdcc96582060/status/1549970539753590784?ref_src=twsrc%5Etfw">July 21, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div> -->
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div class="footerDiv">
+            <div id="Logo">
+                <h3 class="logo">WhereToGo</h3>
+            </div>
+
+            <ul class="footerUl">
+                <!-- <li>
+                    <h3 id="footerH3">Information</h3>
+                </li> -->
+                <li>
+                    <h3 id="footerH3">help</h3>
+                </li>
+                <li>
+                    <h3 id="footerH3">contact</h3>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+    <script>
+        DJANGO_IMAGE_URL = "{% static 'img/airplane.svg' %}";
+    </script>
+
+    <script src="{% static 'main.js' %}"></script>
+
+
+</body>
+
+
+<meta th:name="_csrf" th:content="${_csrf.token}" />
+<meta th:name="_csrf_header" th:content="${_csrf.headerName}" />
+
+</html>

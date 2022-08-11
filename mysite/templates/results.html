@@ -1,0 +1,461 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="{% static 'results.css' %}">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans&family=JetBrains+Mono:wght@800&family=Kantumruy+Pro:wght@500&family=Lato:wght@700&family=Manrope:wght@600&family=Montserrat:wght@600&family=Open+Sans&family=PT+Sans:wght@700&family=Playfair+Display:wght@600&family=Poppins&family=Raleway:wght@100;500&family=Roboto:wght@500&family=Sora&family=Space+Grotesk:wght@700&family=Ubuntu:wght@300&family=Nunito:wght@700&family=Manrope:wght@600&family=Montserrat:wght@300&family=Open+Sans&family=PT+Sans:wght@700&family=M+PLUS+1p:wght@500&family=Playfair+Display:wght@600&family=Poppins&family=Raleway:wght@100;500&family=Sora:wght@500&family=Space+Grotesk:wght@700&family=Roboto&family=Rubik:wght@500&family=Ubuntu:wght@300&family=Work+Sans:wght@500&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="headerDiv">
+            <div class="insideHeader">
+                <div id="Logo">
+                    <h3 class="logo">WhereToGo</h3>
+                </div>
+
+                <div class="menu">
+                    <div class="textMenu">
+                      
+                    </div>
+
+                    <h3 id="login">Log in</h3>
+                    <h3 id="create">Create account</h3>
+
+                    <div class="tabIcon"><img src="{% static 'img/align-right.svg' %}" alt="" id="tabBtn"></div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+
+        <div class="hero">
+
+
+            <div class="topBar">
+              
+                <div class="tabInfos">
+                    <div class="desBar">
+                        <h3 id="barH3">London</h3>
+                        <h3 id="barH3">to</h3>
+                        <h3 id="barH3">westernEU</h3>
+                    </div>
+                    <div class="infoBar">
+                        <h3 id="barInfoH3">Aug 2022</h3>
+                        <h3 id="barInfoH3">
+                            1 Adults
+                        </h3>
+    
+                    </div>
+                </div>
+               
+
+                <div class="selectionItems2">
+                    <div class="currency">
+                        <div class="visitPs">
+                            <span class="currencyText">Euro</span>
+                            <span class="currencyText">Pound</span>
+                        </div>
+                        <img src="{% static 'img/euro.svg' %}" alt="" id='currencyImg'>
+                        <span class="currencyText2">Pound</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container">
+
+                <div class="result">
+
+                    <div class="calendarPop">
+
+                        <div class="calendarMonh">
+                            <div id="ch"><span>Depart</span></div>
+                            <!-- <div class="leftBtn">
+                                <i class="zmdi zmdi-chevron-left zmdi-hc-2x"></i>
+                            </div> -->
+
+                            <select name="name" id="monthSelector">
+
+                                <option></option>
+                                <option></option>
+                                <option></option>
+                                <option></option>
+                                <option></option>
+                                <option></option>
+                                <option></option>
+                                <option></option>
+                            </select>
+
+                            <!-- <div class="rightBtn">
+                                <i class="zmdi zmdi-chevron-right zmdi-hc-2x"></i>
+                            </div> -->
+                        </div>
+                        <ol class="weeks">
+                            <li id="su"><span>Sun</span></li>
+                            <li id="m"><span>Mon</span></li>
+                            <li id="t"><span>Tue</span></li>
+                            <li id="w"><span>Wed</span></li>
+                            <li id="th"><span>Thu</span></li>
+                            <li id="f"><span>Fri</span></li>
+                            <li id="s"><span>Sat</span></li>
+                        </ol>
+                        <table class="pick">
+                            <tbody>
+                                <tr id="pickerFirstRow">
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                </tr>
+                                <tr id="pickerSecondRow">
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                </tr>
+                                <tr id="pickerThirdRow">
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                </tr>
+                                <tr id="pickerForthRow">
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                </tr>
+                                <tr id="pickerFifthRow">
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                </tr>
+                                <tr id="pickerSixthRow">
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                    <td class="pickTd"><button class="dateBtn">
+                                            <div class="numDiv"><span></span></div>
+                                            <div class="price"></div>
+                                        </button></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+
+                    <div class="lists">
+
+                        <div class="listsHead">
+                            <h2>Fri 06 - Aug</h2>
+                        </div>
+
+                        <div class="item">
+                            <ul class="resultsList">
+                                <li class="detail">
+
+                                    <button class="itemBtn">
+                                        <div class="whole">
+                                            <div class="rank">
+                                                <img src="{% static 'img/1.png' %}" alt="" id="numImg">
+                                                <p class="rankText">CHEAPEST</p>
+                                            </div>
+    
+                                            <div class="loc">
+                                                <h2 class="doo">London gatwik (LGC)</h2>
+    
+                                                <!-- <i class="zmdi zmdi-long-arrow-right zmdi-hc-2x"></i> -->
+                                                <img src="{% static 'img/arrow-right.svg' %}" alt="" id="arrowRight">
+    
+                                                <h2 class="ddo">Wolsow (WGS)</h2>
+    
+                                                <div class="tps">
+                                                    <h2 class="tp">65$</h2>
+                                                    <!-- <span>one way</span> -->
+                                                </div>
+    
+                                            </div>
+    
+                                            <div class="airline">
+                                                <div>
+                                                    <img src="{% static 'img/easyJetLogo.png' %}" alt="" id="airLogo">
+                                                    <span id="airLineName">easyJet</span>
+                                                </div>
+                                                <!-- <div class="ticketPrice">
+                                                    <span>Price</span>
+                                                    <span>$12.05</span>
+                                                </div> -->
+                                                <div class="toLink">
+                                                    <span id="linkText">Go to link</span>
+                                                    <!-- <img src="{% static 'img/arrow-right.svg' %}" alt="" id="arrowRight"> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                      
+                                    </button>
+                                </li>
+
+                                <li class="detail">
+                                    <button class="itemBtn">
+                                        <div class="whole">
+                                            <div class="rank">
+                                                <img src="{% static 'img/2.png' %}" alt="" id="numImg">
+                                                <p class="rankText2">SECOND</p>
+                                            </div>
+    
+                                            <div class="loc">
+                                                <h2 class="doo">London gatwik (LGC)</h2>
+                                                <img src="{% static 'img/arrow-right.svg' %}" alt="" id="arrowRight">
+                                                <h2 class="ddo">Wolsow (WGS)</h2>
+    
+                                                <div class="tps">
+                                                    <!-- <span>one way price</span> -->
+                                                    <h2 class="tp">65$</h2>
+                                                </div>
+    
+                                            </div>
+    
+                                            <div class="times">
+                                                <h2 id="time">12:00 pm ~ 13:00 pm</h2>
+                                                <span id="duration">1h 25</span>
+                                            </div>
+    
+                                            <div class="airline">
+                                                <div>
+                                                    <img src="{% static 'img/easyJetLogo.png' %}" alt="" id="airLogo">
+                                                    <span id="airLineName">easyJet</span>
+                                                </div>
+                                                <div class="toLink">
+                                                    <span id="linkText">Go to link</span>
+                                                    <!-- <img src="{% static 'img/arrow-right.svg' %}" alt="" id="arrowRight"> -->
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                       
+                                    </button>
+                                </li>
+
+
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <!-- <div class="right">
+    
+                    </div> -->
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="{% static 'results.js' %}"></script>
+
+
+
+   
+    <footer>
+        <div class="footerDiv">
+            <div id="Logo">
+                <h3 class="logo">WhereToGo</h3>
+            </div>
+
+            <ul class="footerUl">
+                <li>
+                    <h3 id="footerH3">help</h3>
+                </li>
+                <li>
+                    <h3 id="footerH3">contact</h3>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+    
+</body>
+
+</html>
